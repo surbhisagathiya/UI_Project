@@ -1,0 +1,249 @@
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Rectangle-8 {
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    /* padding: 5rem 0 5rem; */
+    background-image: linear-gradient(323deg, #112970 108%, #25439d 34%);
+}
+
+a {
+    text-decoration: none;
+}
+
+img.Logo {
+    width: 18.8rem;
+    height: auto;
+    /* margin: 1rem 42% .1rem; */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.Rectangle {
+    width: auto;
+    max-width: 41rem;
+    height: 42rem;
+    margin: 5rem auto 7.1rem;
+    padding: 3rem auto 3.8rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    background-color: #183380;
+    /* border: 1px white solid; */
+}
+
+.Quality-research-rep {
+    /* position: absolute; */
+    width: 31.8rem;
+    height: 11.7rem;
+    margin: 5rem 0 5rem;
+    font-family: 'Nunito Sans';
+    font-size: 2.7rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 5rem;
+    display: block;
+    padding-top: 2.5rem;
+}
+
+.Rectangle-Login {
+    /* border: 2px red solid; */
+    width: 65%;
+    height: 45px;
+    margin: 35px auto 15px 72px;
+    padding-top: 10px;
+    border-radius: 22.5px;
+    background-color: #20cdbb;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.Rectangle-Signup {
+    /* border: 2px red solid; */
+    width: 65%;
+    height: 45px;
+    margin: 19px auto 15px 72px;
+    padding-top: 10px;
+    border-radius: 22.5px;
+    background-color: #51a8d1;
+    /* text-align: center; */
+    cursor: pointer;
+}
+
+.Log-In {
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Rectangle-5 {
+    display: flex;
+    /* margin-left: 1rem; */
+    margin: 3rem;
+    text-align: center;
+    margin-left: 3rem;
+    /* margin-top: 100rem; */
+}
+
+.OR {
+    width: 2rem;
+    height: 1.8rem;
+    margin: 0rem 1.5rem;
+    opacity: 0.15;
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}
+
+.Line1 {
+    width: 13rem;
+    height: 0rem;
+    margin: 0.6rem 0rem 0.7rem 3.5rem;
+    opacity: 0.1;
+    border: solid 0.1rem #ffffff;
+}
+.Line2 {
+    width: 13rem;
+    height: 0rem;
+    margin: 0.6rem 3.5rem 0.7rem 0.14rem;
+    opacity: 0.1;
+    border: solid 0.1rem #ffffff;
+}
+
+.Rectangle-7 {
+    text-align: center;
+}
+
+.Dont-have-an-accoun {
+    width: 16.9rem;
+    height: 2rem;
+    /* margin: 0 9.7rem; */
+    opacity: 0.5;
+    font-family: 'Nunito Sans';
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #ffffff;
+}
+
+.Sign-Up {
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    background-color: #1c2646;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    padding: 9px 20px 7px 20px;
+}
+
+.social-icon {
+    margin: 1px 0 1px auto;
+    opacity: 0.7;
+    font-family: FontAwesome;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+    text-align: right;
+    color: #ffffff;
+    float: right;
+}
+
+.copyright {
+    margin: 0 auto 0 0;
+    opacity: 0.7;
+    font-family: 'Nunito Sans';
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    float: left;
+}
+
+@media (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 48%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 35.5%;
+    }
+}
+
+@media (max-width: 250px) {
+    html {
+        font-size: 34.5%;
+    }
+}
+
+@media (max-width: 240px) {
+    html {
+        font-size: 33%;
+    }
+}
+
+@media (max-width: 220px) {
+    html {
+        font-size: 27%;
+    }
+}
