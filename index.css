@@ -192,6 +192,7 @@ footer .footer__social-icon .fa {
   }
   main {
     padding: 0 2em 5em 2em;
+    min-height: calc(100vh - 174.66px - 30.66px);
   }
   main section {
     padding: 1em 1em;
@@ -199,10 +200,10 @@ footer .footer__social-icon .fa {
     width: 85%;
   }
   main section .section__title {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   footer {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
 /*# sourceMappingURL=index.css.map */
