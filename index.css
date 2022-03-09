@@ -186,7 +186,7 @@ footer .footer__social-icon .fa {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 418px) {
   header .Logo {
     max-width: 11em;
   }
@@ -195,7 +195,7 @@ footer .footer__social-icon .fa {
     width: 80%;
   }
   main section .section__title {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   footer {
     font-size: 0.8em;
