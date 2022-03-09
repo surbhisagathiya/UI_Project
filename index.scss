@@ -175,27 +175,28 @@ footer {
             width: 56%;
         }
     }
-}   
+}
 
 @media screen and (max-width: 420px) {
-    header{
-        .Logo{
+    header {
+        .Logo {
             max-width: 11em;
         }
     }
     main {
         padding: 0 2em 5em 2em;
-        min-height: calc(100vh - 5vh - 5vh);        
+        min-height: calc(100vh - 5vh - 5vh);
         section {
             padding: 1em 1em;
             height: auto;
             width: 85%;
-            & .section__title{
-                font-size: 1.4em;
+            & .section__title {
+                font-size: 1.6em;
             }
         }
     }
-    footer{
+    footer {
         font-size: 0.8em;
     }
 }
+
