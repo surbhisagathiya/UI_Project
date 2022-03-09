@@ -22,7 +22,7 @@ header {
 }
 main {
     padding: 0 3em 5em 3em;
-    min-height: calc(100vh - 244.28px - 38px);
+    min-height: calc(100vh - 15vh - 5vh);
     & section {
         background-color: $Namjoon;
         height: auto;
@@ -36,7 +36,7 @@ main {
             height: auto;
             margin: 0.2em 0 1em;
             font-family: "Nunito Sans";
-            font-size: 1.8em;
+            font-size: 1.7em;
             font-weight: 800;
             font-stretch: normal;
             font-style: normal;
@@ -175,7 +175,7 @@ footer {
             width: 56%;
         }
     }
-}
+}   
 
 @media screen and (max-width: 420px) {
     header{
@@ -185,7 +185,7 @@ footer {
     }
     main {
         padding: 0 2em 5em 2em;
-        min-height: calc(100vh - 174.66px - 30.66px);        
+        min-height: calc(100vh - 5vh - 5vh);        
         section {
             padding: 1em 1em;
             height: auto;
@@ -196,6 +196,6 @@ footer {
         }
     }
     footer{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 }
