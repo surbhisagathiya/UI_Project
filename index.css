@@ -185,4 +185,24 @@ footer .footer__social-icon .fa {
     width: 56%;
   }
 }
+
+@media screen and (max-width: 355px) {
+  header .Logo {
+    max-width: 11em;
+  }
+  main {
+    padding: 0 3em 5em 1em;
+  }
+  main section {
+    border: 1px firebrick solid;
+    height: auto;
+    width: 89%;
+  }
+  main section .section__title {
+    font-size: 1.4em;
+  }
+  footer {
+    font-size: 0.7em;
+  }
+}
 /*# sourceMappingURL=index.css.map */
