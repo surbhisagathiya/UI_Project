@@ -208,7 +208,16 @@ footer {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 420px) {
+    header {
+        .header__header-logo {
+            & .header__header-logo_Logo {
+                // width: auto;
+                max-width: 5.5em;
+                margin: 0.5em auto 0.5em 1em;
+            }
+        }
+    }
     main {
         .main__login-container {
             & .main__login-container_title {
@@ -233,6 +242,12 @@ footer {
                 background-color: #ffffff;
                 margin-bottom: 2.5em;
             }
+            & .main__login-container_wrapper_eye_icon {
+                margin-left: 3.5em;
+            }
         }
+    }
+    footer {
+        font-size: 0.8em;
     }
 }

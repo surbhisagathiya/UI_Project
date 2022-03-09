@@ -231,7 +231,11 @@ footer .footer__social-icon .fa {
   color: #ffffff;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 420px) {
+  header .header__header-logo .header__header-logo_Logo {
+    max-width: 5.5em;
+    margin: 0.5em auto 0.5em 1em;
+  }
   main .main__login-container .main__login-container_title {
     font-size: 28px;
     font-family: NunitoSans;
@@ -254,6 +258,12 @@ footer .footer__social-icon .fa {
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     margin-bottom: 2.5em;
+  }
+  main .main__login-container .main__login-container_wrapper_eye_icon {
+    margin-left: 3.5em;
+  }
+  footer {
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=login.css.map */
