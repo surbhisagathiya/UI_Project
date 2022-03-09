@@ -177,18 +177,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 418px) {
+@media screen and (max-width: 420px) {
     header{
         .Logo{
             max-width: 11em;
         }
     }
     main {
+        padding: 0 2em 5em 2em;
         section {
+            padding: 1em 1em;
             height: auto;
-            width: 80%;
+            width: 85%;
             & .section__title{
-                font-size: 1.3em;
+                font-size: 1.4em;
             }
         }
     }
