@@ -186,10 +186,19 @@ footer .footer__social-icon .fa {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
+  header .Logo {
+    max-width: 11em;
+  }
   main section {
     height: auto;
-    width: 85%;
+    width: 80%;
+  }
+  main section .section__title {
+    font-size: 1.4em;
+  }
+  footer {
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=index.css.map */
