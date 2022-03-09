@@ -1,12 +1,12 @@
-html {
-    font-size: 62.5%;
-}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+html {
+    font-size: 62.5%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +17,7 @@ body {
     height: 100%;
     padding-top: 5rem;
     /* padding: 5rem 0 5rem; */
+    position: relative;
     background-image: linear-gradient(323deg, #112970 108%, #25439d 34%);
 }
 
@@ -35,23 +36,24 @@ img.Logo {
 
 .Rectangle {
     width: auto;
-    max-width: 41rem;
+    max-width: 32%;
     height: 42rem;
     margin: 5rem auto 7.1rem;
     padding: 3rem auto 3.8rem;
     border-radius: 0.4rem;
     box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
     background-color: #183380;
-    /* border: 1px white solid; */
 }
 
 .Quality-research-rep {
-    /* position: absolute; */
-    width: 31.8rem;
-    height: 11.7rem;
-    margin: 5rem 0 5rem;
-    font-family: 'Nunito Sans';
-    font-size: 2.7rem;
+    position: relative;
+    width: auto;
+    max-width: 31.8rem;
+    height: auto;
+    margin: 5rem 0 2rem;
+    font-family: "Nunito Sans";
+    /* font-size: 2.6rem; */
+    font-size: 1.9vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -60,15 +62,17 @@ img.Logo {
     color: #ffffff;
     text-align: center;
     margin-left: 5rem;
+    margin-right: 5rem;
     display: block;
     padding-top: 2.5rem;
 }
 
 .Rectangle-Login {
-    /* border: 2px red solid; */
-    width: 65%;
+    max-width: 65%;
+    width: auto;
+    /* height: auto; */
     height: 45px;
-    margin: 35px auto 15px 72px;
+    margin: 35px auto 15px auto;
     padding-top: 10px;
     border-radius: 22.5px;
     background-color: #20cdbb;
@@ -77,10 +81,10 @@ img.Logo {
 }
 
 .Rectangle-Signup {
-    /* border: 2px red solid; */
-    width: 65%;
+    width: auto;
+    max-width: 65%;
     height: 45px;
-    margin: 19px auto 15px 72px;
+    margin: 19px auto 15px auto;
     padding-top: 10px;
     border-radius: 22.5px;
     background-color: #51a8d1;
@@ -89,8 +93,8 @@ img.Logo {
 }
 
 .Log-In {
-    font-family: 'Nunito Sans';
-    font-size: 16px;
+    font-family: "Nunito Sans";
+    font-size: 1.2vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -114,8 +118,8 @@ img.Logo {
     height: 1.8rem;
     margin: 0rem 1.5rem;
     opacity: 0.15;
-    font-family: 'Roboto';
-    font-size: 1.7rem;
+    font-family: "Roboto";
+    font-size: 1.2vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -149,8 +153,8 @@ img.Logo {
     height: 2rem;
     /* margin: 0 9.7rem; */
     opacity: 0.5;
-    font-family: 'Nunito Sans';
-    font-size: 1.5rem;
+    font-family: "Nunito Sans";
+    font-size: 1.2vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -161,8 +165,8 @@ img.Logo {
 }
 
 .Sign-Up {
-    font-family: 'Nunito Sans';
-    font-size: 16px;
+    font-family: "Nunito Sans";
+    font-size: 1.2vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -201,8 +205,8 @@ img.Logo {
 .copyright {
     margin: 0 auto 0 0;
     opacity: 0.7;
-    font-family: 'Nunito Sans';
-    font-size: 15px;
+    font-family: "Nunito Sans";
+    font-size: 1.2vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -211,39 +215,20 @@ img.Logo {
     color: #ffffff;
     float: left;
 }
-
-@media (max-width: 998px) {
-    html {
-        font-size: 55%;
+/* 
+@media screen and (max-width: 750px) {
+    .Rectangle {
+        width: auto;
+        max-width: 36%;
+        height: auto;
+        margin: auto;
+        padding: 2vh 4vH;
+        border-radius: 0.4rem;
+        box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+        background-color: #183380;
+        border: 1px white solid; 
     }
-}
+} */
 
-@media (max-width: 768px) {
-    html {
-        font-size: 48%;
-    }
-}
 
-@media (max-width: 320px) {
-    html {
-        font-size: 35.5%;
-    }
-}
 
-@media (max-width: 250px) {
-    html {
-        font-size: 34.5%;
-    }
-}
-
-@media (max-width: 240px) {
-    html {
-        font-size: 33%;
-    }
-}
-
-@media (max-width: 220px) {
-    html {
-        font-size: 27%;
-    }
-}

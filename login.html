@@ -9,66 +9,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css" />
-    <script type="text/javascript" src="login.css"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script type="text/javascript" src="login.js"></script>
     <title>UI-2</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="Login-page-web-R">
-            <div class="header">
-                <div class="logo">
-                    <img src="img/logo.png" srcset="img/logo@2x.png 2x,
-             img/logo@3x.png 3x" class="Logo">
+    <header>
+        <div class="header__header-logo">
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x,
+            img/logo@3x.png 3x" class="header__header-logo_Logo">
+        </div>
+        <div class="header__header-title">
+            <span class="header__header-title_title-text Text-Style">Log In</span>
+        </div>
+    </header>
+    <main>
+        <div class="main__login-container">
+            <p class="main__login-container_title">
+                Let’s get started
+            </p>
+            <div class="main__login-container_wrapper">
+                <div>
+                    <label class="main__login-container_wrapper_label-text">Email or Username</label>
+                    <input class="main__login-container_wrapper_input-text" name="email" type="email" />
                 </div>
-                <div class="header-center">
-                    <span class="Log-in Text-Style">Log In</span>
+                <div>
+                    <label class="main__login-container_wrapper_label-text" for="password">Password</label>
+                    <input class="main__login-container_wrapper_input-text" id="pass_log_id" type="password" name="pass" />
+                    <span toggle="#password-field" class="fa fa-fw fa-eye main__login-container_wrapper_eye_icon toggle-password"></span>
                 </div>
+                <a href="#" class="Log-Link Text-Style">
+                    <div class="main__login-container_wrapper_Btn main__login-container_wrapper_Btn_Login">
+                        Log In
+                    </div>
+                </a>
+                <a href="#" class="main__login-container_wrapper_Forgot-password">
+                    Forgot password?
+                </a>
             </div>
-            <div class="container-body">
-                <span class="Lets-get-started">
-                    Let’s get started
+            <div class="main__login-container_signup">
+                <span href="#" class="main__login-container_signup-text">
+                    Don’t have an account yet?
                 </span>
-                <div class="Rectangle">
-                    <div>
-                        <label class="label-text">Email or Username</label>
-                        <input class="input-text" name="email" type="email" />
-                    </div>
-                    <div>
-                        <label class="label-text" for="password">Password</label>
-                        <input class="input-text" id="pass_log_id" type="password" name="pass" />
-                        <!-- <img src="img/group-2.png" srcset="img/group-2@2x.png 2x,
-             img/group-2@3x.png 3x" class="Group-2"> -->
-                        <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span>
-                    </div>
-                    <a href="#" class="Log-In Text-Style">
-                        <div class="Rectangle-6">
-                            Log In
-                        </div>
-                    </a>
-                    <a href="#" class="Forgot-password">
-                        Forgot password?
-                    </a>
-                </div>
-                <div class="Rectangle-7">
-                    <span href="#" class="Dont-have-an-accoun">
-                        Don’t have an account yet?
-                    </span>
-                    <a href="#" class="Sign-Up">
-                        Sign Up
-                    </a>
-                </div>
+                <a href="#" class="main__login-container_signup-link">
+                    Sign Up
+                </a>
             </div>
         </div>
-        <div class="footer">
-            <span class="copyright">
-                © 2018 Rayft. All rights reserved.
-            </span>
-            <span class="social-icon">
-                  
-            </span>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <span class="footer__copyright">
+            © 2018 Rayft. All rights reserved.
+        </span>
+        <span class="footer__social-icon">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </span>
+    </footer>
 </body>
 
 </html>

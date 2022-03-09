@@ -1,0 +1,188 @@
+body {
+  background: linear-gradient(323deg, #112970 108%, #25439d 34%);
+  margin: 0;
+  padding: 0;
+}
+
+header .Logo {
+  height: auto;
+  width: 100%;
+  max-width: 14em;
+  margin: 0 auto;
+  padding: 3em;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main {
+  padding: 0 3em 5em 3em;
+  min-height: calc(100vh - 244.28px - 38px);
+}
+
+main section {
+  background-color: #183380;
+  height: auto;
+  width: 28%;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
+main section .section__title {
+  position: relative;
+  width: auto;
+  max-width: 31.8em;
+  height: auto;
+  margin: 0.2em 0 1em;
+  font-family: "Nunito Sans";
+  font-size: 1.8em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+}
+
+main section .section__Log-Link {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main section .section__Btn {
+  max-width: 80%;
+  width: auto;
+  height: 20%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+main section .section__Btn.section__Btn_Login {
+  background-color: #20cdbb;
+}
+
+main section .section__Btn.section__Btn_Signup {
+  background-color: #51a8d1;
+  margin-top: 1em;
+}
+
+main section .section__Or-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1.7em;
+  text-align: center;
+  padding: 1.5em;
+}
+
+main section .section__OR {
+  margin: 0 1em;
+  opacity: 0.15;
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+main section .section__Line {
+  width: 15em;
+  margin: auto 0;
+  opacity: 0.15;
+  border: solid 1px #ffffff;
+}
+
+main section .section__signup-title-Link {
+  text-align: center;
+}
+
+main section .section__signup-title {
+  height: 2em;
+  opacity: 0.5;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+main section .section__Sign-Link {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1c2646;
+  padding: 0.2em;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .footer__copyright {
+  margin: 0.5em auto 0.5em 3em;
+  opacity: 0.7;
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  float: left;
+}
+
+footer .footer__social-icon {
+  float: right;
+  margin: 0.5em 3em 0.5em auto;
+  opacity: 0.7;
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5rem;
+}
+
+footer .footer__social-icon .fa {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 750px) {
+  main section {
+    height: auto;
+    width: 56%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
