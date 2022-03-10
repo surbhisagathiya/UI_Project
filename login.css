@@ -78,9 +78,15 @@ main .main__login-container .main__login-container_wrapper {
   margin-bottom: 2.5em;
 }
 
+main .main__login-container .form-group {
+  margin: 2em 0;
+  width: 100%;
+}
+
 main .main__login-container .main__login-container_wrapper_label-text {
   font-size: 14px;
   opacity: 0.3;
+  height: auto;
   font-family: NunitoSans;
   color: #242a41;
   font-weight: bold;
@@ -89,7 +95,6 @@ main .main__login-container .main__login-container_wrapper_label-text {
   line-height: normal;
   letter-spacing: normal;
   float: left;
-  margin-top: 1.2rem;
 }
 
 main .main__login-container .main__login-container_wrapper_input-text {
@@ -106,16 +111,27 @@ main .main__login-container .main__login-container_wrapper_input-text:hover {
   border-bottom: 2px #00ccff solid;
 }
 
+main .main__login-container .error {
+  color: red;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+main .main__login-container input.error {
+  color: black;
+}
+
 main .main__login-container .main__login-container_wrapper_eye_icon {
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.3;
   position: absolute;
-  margin-left: 9em;
+  margin-left: 9.5vw;
   margin-top: -2em;
 }
 
-main .main__login-container .Log-Link {
+main .main__login-container .main__login-container_wrapper_Log-Link {
   font-family: "Nunito Sans";
   font-size: 1em;
   font-weight: 800;
@@ -126,6 +142,9 @@ main .main__login-container .Log-Link {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 main .main__login-container .main__login-container_wrapper_Btn {

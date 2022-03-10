@@ -67,9 +67,19 @@ main {
             background-color: #ffffff;
             margin-bottom: 2.5em;
         }
+
+        & .form-group {
+            margin: 2em 0 ;
+            // padding: auto;
+            width: 100%;
+            
+        }
         & .main__login-container_wrapper_label-text {
+            // border: 1px red solid;
             font-size: 14px;
             opacity: 0.3;
+            height: auto;
+            // width: 100%;
             font-family: NunitoSans;
             color: #242a41;
             font-weight: bold;
@@ -78,7 +88,7 @@ main {
             line-height: normal;
             letter-spacing: normal;
             float: left;
-            margin-top: 1.2rem;
+            // margin-top: 1rem;
         }
         & .main__login-container_wrapper_input-text {
             width: 100%;
@@ -93,14 +103,34 @@ main {
         & .main__login-container_wrapper_input-text:hover {
             border-bottom: 2px rgb(0, 204, 255) solid;
         }
+        .error {
+            color:red;
+        //    position: relative;
+            // float: left;
+            width: 100%;
+            display: block;
+            // margin-right: 11em;
+            // margin-top: 0.2em;
+            margin-bottom: 0.5em;
+        }
+        input.error{
+            color: black;
+        }
+        // & .main__login-container_wrapper_errorMeg {
+        //     // border: 1px blue solid;
+        //     color: red;
+        //     // padding: 4em 0;
+        //     // width: 100%;
+        //     // padding-right: 5em;
+        // }
         & .main__login-container_wrapper_eye_icon {
             object-fit: contain;
             opacity: 0.3;
             position: absolute;
-            margin-left: 9em;
+            margin-left: 9.5vw;
             margin-top: -2em;
         }
-        .Log-Link {
+        .main__login-container_wrapper_Log-Link {
             font-family: "Nunito Sans";
             font-size: 1em;
             font-weight: 800;
@@ -111,6 +141,9 @@ main {
             text-align: center;
             color: #ffffff;
             text-decoration: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
         }
         .main__login-container_wrapper_Btn {
             max-width: 100%;
