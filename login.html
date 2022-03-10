@@ -28,29 +28,31 @@
     </header>
     <main>
         <div class="main__login-container">
-            <p class="main__login-container_title">
+            <h1 class="main__login-container_title">
                 Let’s get started
-            </p>
+            </h1>
             <div class="main__login-container_wrapper">
                 <!-- <form name="login-form" onsubmit="return email_funnction()"> -->
                 <form id="loginform" method="post">
 
-                    <div class="form-group">
+                    <div>
                         <label class="main__login-container_wrapper_label-text">Email or Username</label>
-                        <input class="main__login-container_wrapper_input-text" value="" name="email" type="email"
-                            required />
+                        <input class="main__login-container_wrapper_input-text" value="" name="email" type="email" />
                         <!-- <span id="erroremail" class="main__login-container_wrapper_errorMeg"></span> -->
                     </div>
-                    <div class="form-group pwd">
+                    <div>
                         <label class="main__login-container_wrapper_label-text">Password</label>
-                        <input class="main__login-container_wrapper_input-text" value="" id="pass_log_id"
-                            type="password" name="password" />
                         <i toggle="#password-field"
                             class="fa fa-eye main__login-container_wrapper_eye_icon toggle-password"></i>
+
+                        <input class="main__login-container_wrapper_input-text" value="" id="pass_log_id"
+                            type="password" name="password" />
+
                         <!-- <span toggle="#password-field"
                             class="fa fa-fw fa-eye main__login-container_wrapper_eye_icon toggle-password"></span> -->
                         <!-- <span id="errorpwd" class="main__login-container_wrapper_errorMeg"></span> -->
                     </div>
+
                     <!-- <a href="#"> -->
                     <div class="main__login-container_wrapper_Btn main__login-container_wrapper_Btn_Login">
                         <button type="button" value="Log In" id="submit"

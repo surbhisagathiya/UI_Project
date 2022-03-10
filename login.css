@@ -43,11 +43,12 @@ header .header__header-title .header__header-title_title-text {
 }
 
 main {
+  width: 100%;
   min-height: calc(100vh - 44px - 44.38px);
 }
 
 main .main__login-container {
-  text-align: center;
+  width: 100%;
   position: relative;
   margin: auto;
   padding: 2.5rem;
@@ -58,6 +59,7 @@ main .main__login-container .main__login-container_title {
   font-family: NunitoSans;
   color: #242a41;
   font-weight: bold;
+  text-align: center;
   font-family: "NunitoSans";
   font-stretch: normal;
   font-style: normal;
@@ -78,16 +80,12 @@ main .main__login-container .main__login-container_wrapper {
   margin-bottom: 2.5em;
 }
 
-main .main__login-container .form-group {
-  margin: 2em 0;
-  width: 100%;
-}
-
 main .main__login-container .main__login-container_wrapper_label-text {
-  font-size: 14px;
+  font-size: 0.9em;
   opacity: 0.3;
-  height: auto;
-  font-family: NunitoSans;
+  height: 10%;
+  width: 100%;
+  font-family: 'NunitoSans';
   color: #242a41;
   font-weight: bold;
   font-stretch: normal;
@@ -95,16 +93,19 @@ main .main__login-container .main__login-container_wrapper_label-text {
   line-height: normal;
   letter-spacing: normal;
   float: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 main .main__login-container .main__login-container_wrapper_input-text {
   width: 100%;
-  height: 2em;
+  height: 10%;
   font-weight: bold;
   font-size: 1.1em;
   border: none;
   border-bottom: 2px #f7f8fa solid;
   outline: none;
+  margin-bottom: 1em;
 }
 
 main .main__login-container .main__login-container_wrapper_input-text:hover {
@@ -116,6 +117,7 @@ main .main__login-container .error {
   width: 100%;
   display: block;
   margin-bottom: 0.5em;
+  font-size: 0.9rem;
 }
 
 main .main__login-container input.error {
@@ -123,12 +125,13 @@ main .main__login-container input.error {
 }
 
 main .main__login-container .main__login-container_wrapper_eye_icon {
+  width: auto;
+  float: right;
+  margin-left: 23vw;
+  right: 1;
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.3;
-  position: absolute;
-  margin-left: 9.5vw;
-  margin-top: -2em;
 }
 
 main .main__login-container .main__login-container_wrapper_Log-Link {
@@ -154,6 +157,7 @@ main .main__login-container .main__login-container_wrapper_Btn {
   margin: 2em auto 1em auto;
   padding: 0.5em;
   border-radius: 2em;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -182,6 +186,10 @@ main .main__login-container .main__login-container_wrapper_Forgot-password {
   text-align: center;
   color: #51a8d1;
   text-decoration: none;
+}
+
+main .main__login-container .main__login-container_signup {
+  text-align: center;
 }
 
 main .main__login-container .main__login-container_signup .main__login-container_signup-text {
