@@ -1,0 +1,305 @@
+$Namjoon: #183380;
+$light-navy: #112970;
+$cobalt-Two: #25439d;
+$white: #ffffff;
+$tealish: #20cdbb;
+
+body {
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 1em;
+}
+
+.container {
+    width: 100%;
+    min-height: calc(100vh - 44px - 44.38px);
+    .signup-container {
+        position: relative;
+        margin: auto;
+        .title {
+            font-size: 28px;
+            color: #242a41;
+            font-weight: 800;
+            text-align: center;
+            // font-stretch: normal;
+            // font-style: normal;
+            // line-height: normal;
+            // letter-spacing: normal;
+            margin: 1.5em;
+        }
+        .signup-wrapper {
+            width: 100%;
+            max-width: 26%;
+            height: auto;
+            margin: 0 auto;
+            padding: 2.1em 3.4em 2.1em 3.4em;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            margin-bottom: 2.5em;
+        }
+        .form-group-fullname {
+            display: flex;
+            flex-grow: 1;
+            .name {
+                margin-right: 1em;
+            }
+        }
+        .label-text {
+            font-size: 0.75em;
+            opacity: 0.3;
+            width: 100%;
+            font-family: "Nunito Sans";
+            color: #242a41;
+            font-weight: bold;
+            // font-stretch: normal;
+            // font-style: normal;
+            // line-height: normal;
+            // letter-spacing: normal;
+            float: left;
+            padding-top: 0.2em;
+            padding-bottom: 0.5em;
+        }
+        .input-text {
+            width: 100%;
+            font-weight: bold;
+            font-size: 1em;
+            border: none;
+            border-bottom: 2px #f7f8fa solid;
+            outline: none;
+            margin-bottom: 0.6em;
+            &:hover {
+                border-bottom: 2px rgb(0, 204, 255) solid;
+            }
+        }
+        input.error {
+            color: black;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .radio-btn {
+            width: 100%;
+            display: flex;
+        }
+        .purpose {
+            width: 50%;
+            float: left;
+        }
+        .purpose input[type="radio"]:checked {
+            color: black;
+        }
+        .purpose input[type="radio"]:checked + label {
+            font-weight: 800;
+            color: #242a41;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .radio-custom {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .radio-custom,
+        .radio-custom-label {
+            display: inline-block;
+            vertical-align: middle;
+            // margin: 15px;
+            // border:1px solid red;
+            cursor: pointer;
+        }
+        .radio-custom-label {
+            position: relative;
+        }
+
+        .radio-custom + .radio-custom-label:before {
+            content: "";
+            // background:;
+            border: 1px solid #ddd;
+            display: inline-block;
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            padding: 2px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .radio-custom + .radio-custom-label:before {
+            border-radius: 50%;
+        }
+
+        .radio-custom:checked + .radio-custom-label:before {
+            content: "\f00c";
+            font-family: "FontAwesome";
+            color: $white;
+            background-color: $tealish;
+            border: 1px solid $tealish;
+        }
+
+        // .radio-custom:focus + .radio-custom-label {
+        //     outline: 1px solid #ddd; /* focus style */
+        // }
+
+        // input[type="radio"] {
+        //     display: none;
+        // }
+        // input[type="radio"] + label {
+        //     display: inline-block;
+        //     height: 18px;
+        //     width: 18px;
+        //     border: 1px solid black;
+        //     position: relative;
+        //     padding: 0.1em;
+        //     border-radius: 50%;
+        // }
+        // input[type="radio"]:checked  + label {
+        //     background-color: $tealish;
+        //     // outline: none;
+        //     opacity: 0.9;
+        // }
+        // input[type="radio"]:checked + label::after {
+        //     position: absolute;
+        //     content: "";
+        //     // outline: none;
+        //     height: 15px;
+        //     width: 5px;
+        //     border: 2px solid #fff;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     top: -6px;
+        //     margin: auto;
+        //     transform: rotate(45deg);
+        //     border-top-color: transparent;
+        //     border-left-color: transparent;
+        // }
+
+        .radio-val {
+            font-size: 1em;
+            opacity: 0.3;
+            cursor: pointer;
+        }
+
+        .pwd {
+            position: relative;
+        }
+        .error {
+            color: red;
+            font-family: "Nunito Sans";
+            margin-bottom: -0.8em;
+            font-size: 0.7rem;
+        }
+        .eye_icon {
+            float: right;
+            // margin-left: 23vw;
+            position: absolute;
+            right: 0.3em;
+            // object-fit: contain;
+            opacity: 0.3;
+        }
+        .Sign-Link {
+            font-family: "Nunito Sans";
+            font-size: 1em;
+            font-weight: 800;
+            // font-stretch: normal;
+            // font-style: normal;
+            // line-height: normal;
+            // letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .Btn {
+            max-width: 100%;
+            width: auto;
+            height: 20%;
+            margin: 2em auto 1em auto;
+            padding: 0.5em;
+            border-radius: 2em;
+            text-align: center;
+            cursor: pointer;
+            &.Btn_Signup {
+                background-color: #20cdbb;
+            }
+        }
+
+        .login-box {
+            text-align: center;
+            .login-text {
+                opacity: 0.3;
+                font-family: "Nunito Sans";
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                color: #242a41;
+            }
+
+            .login-link {
+                margin: 0 0 0 2px;
+                font-family: "Nunito Sans";
+                font-size: 14px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: right;
+                color: #51a8d1;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        .signup-container {
+            .title {
+                font-size: 24px;
+                // color: #242a41;
+                // font-weight: bold;
+                // font-family: "Nunito Sans";
+                // font-stretch: normal;
+                // font-style: normal;
+                // line-height: normal;
+                // letter-spacing: normal;
+            }
+            .label-text {
+                font-size: 0.9em;
+                padding-bottom: 1em;
+            }
+            .signup-wrapper {
+                // width: 100%;
+                max-width: 60%;
+                // height: auto;
+                // margin: 0 auto;
+                // padding: 35px 55px 30px;
+                // border-radius: 4px;
+                // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+                // background-color: #ffffff;
+                // margin-bottom: 2.5em;
+            }
+            .radio-val {
+                font-size: 0.9em;
+                // opacity: 0.3;
+                // cursor: pointer;
+            }
+            .login-box {
+                padding-bottom: 1em;
+            }
+        }
+    }
+}

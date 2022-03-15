@@ -18,7 +18,7 @@ $(document).ready(function () {
         },
         messages: {
             email: {
-                required: "This field is required"
+                required: "PLease provide your email or username"
             },
             password: {
                 required: "This field is required"
@@ -26,8 +26,11 @@ $(document).ready(function () {
         }
     });
 
-    $('#submit').click(function(){
-        $('#loginform').submit();
+    $('#submit').click(function () {
+        $('#loginform').submit()  
+        if($('#loginform').valid()){
+            window.location = "home.html";
+        }
     });
 });
 // function login_function() {

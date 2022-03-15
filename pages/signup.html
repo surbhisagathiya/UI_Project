@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="..\css\signup.css" />
+    <link rel="stylesheet" href="..\css\header.css" />
+    <link rel="stylesheet" href="..\css\footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <script type="text/javascript" src="..\js\login.js"></script>
+    <script type="text/javascript" src="..\js\signup.js"></script>
+
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <div class="header__header-logo"> -->
+        <img src="../img/logo.png" srcset="../img/logo@2x.png 2x,
+            ../img/logo@3x.png 3x" class="logo">
+        <!-- </div> -->
+        <div class="title">
+            <span class="title-text Text-Style">Sign Up</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="signup-container">
+            <h1 class="title">
+                Create an account
+            </h1>
+            <div class="signup-wrapper">
+                <!-- <form name="login-form" onsubmit="return email_funnction()"> -->
+                <form id="signupform" class="loginform" method="post">
+                    <div class="form-group-fullname">
+                        <div class="form-input name">
+                            <label class="label-text">First name</label>
+                            <input class="input-text" value="" name="firstname" type="text" />
+                        </div>
+                        <div class="form-input name">
+                            <label class="label-text">Last name</label>
+                            <input class="input-text" value="" name="lastname" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label-text">Email address</label>
+                        <input class="input-text" value="" name="email" type="email" />
+                        <!-- <span id="erroremail" class="main__login-container_wrapper_errorMeg"></span> -->
+                    </div>
+                    <div class="pwd">
+                        <label class="label-text">Password</label>
+
+                        <i toggle="#password-field" class="fa fa-eye eye_icon toggle-password"></i>
+                        <input class="input-text" value="" id="pass_log_id" type="password" name="password" />
+
+                        <!-- <span toggle="#password-field"
+                            class="fa fa-fw fa-eye main__login-container_wrapper_eye_icon toggle-password"></span> -->
+                        <!-- <span id="errorpwd" class="main__login-container_wrapper_errorMeg"></span> -->
+                    </div>
+                    <div>
+                        <label class="label-text">Whats your purpose here?</label>
+                        <div class="radio-container">
+                            <div class="radio-btn">
+                                <!-- <div class="purpose">
+                                    <input type="radio" value="reading" name="purpose" />
+                                    <label class="radio-val">Reading</label>
+                                </div>
+                                <div class="purpose">
+                                    <input type="radio" value="writingreports" name="purpose" />
+                                    <label class="radio-val">Writing reports</label>
+                                </div> -->
+                                <div class="purpose">
+                                    <input id="radio-1" class="radio-custom" name="purpose" type="radio" value="reading" >
+                                    <label for="radio-1" class="radio-custom-label radio-val">Reading</label>
+                                </div> 
+                                <div class="purpose">
+                                    <input id="radio-2" class="radio-custom" name="purpose" type="radio" value="writingreports">
+                                    <label for="radio-2" class="radio-custom-label radio-val">Writing reports</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <a href="#"> -->
+                    <div class="Btn Btn_Signup">
+                        <button type="button" value="Log In" id="submit" class="Sign-Link">Next</button>
+                    </div>
+                    <!-- </a> -->
+
+                </form>
+            </div>
+            <div class="login-box">
+                <span href="#" class="login-text">
+                    Already have an account?
+                </span>
+                <a href="login.html" class="login-link">
+                    Log in
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer__copyright">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Rayft. All rights reserved.
+        </span>
+        <span class="footer__social-icon">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </span>
+        </footer>
+</body>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+</html>

@@ -1,0 +1,176 @@
+body {
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 44px - 44.38px);
+}
+
+.container .step-2-container {
+  position: relative;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.container .step-2-container .title {
+  font-size: 28px;
+  color: #242a41;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.3em;
+}
+
+.container .step-2-container .signup-2-wrapper {
+  width: 100%;
+  max-width: 47%;
+  height: auto;
+  margin: 0 auto;
+  padding: 35px 55px 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.container .step-2-container .get-started {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container .step-2-container .Btn {
+  max-width: 49%;
+  width: auto;
+  height: 20%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .step-2-container .Btn.Btn_getStart {
+  background-color: #20cdbb;
+}
+
+.container .step-2-container .signup-step2-box {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.container .step-2-container .signup-step2-box .signup-step2-text {
+  opacity: 0.3;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #242a41;
+  text-decoration: none;
+}
+
+.container .step-2-container .checkbox-wrap {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.container .step-2-container .checkbox-wrap div {
+  margin: 0.1em;
+  display: initial;
+}
+
+.container .step-2-container .checkbox-wrap div label input[type="checkbox"] {
+  display: none;
+}
+
+.container .step-2-container .checkbox-wrap div label span {
+  position: relative;
+  display: inline-block;
+  margin: 0.56rem 0 0 0.93rem;
+  padding: 0.56rem 1.12rem 0.56rem 1.31rem;
+  color: #555;
+  border-radius: 17px;
+  border: solid 1px rgba(36, 42, 65, 0.2);
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.container .step-2-container .checkbox-wrap div label span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.container .step-2-container .checkbox-wrap div label input[type="checkbox"]:checked ~ span {
+  background: transparent;
+  border: solid 1px #51a8d1;
+  color: #51a8d1;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  opacity: 0.9;
+}
+
+.container .step-2-container .error {
+  color: red;
+  font-family: "Nunito Sans";
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .container .step-2-container {
+    padding: 1.5rem;
+  }
+  .container .step-2-container .title {
+    font-size: 18px;
+    margin-bottom: 2.5em;
+  }
+  .container .step-2-container .signup-2-wrapper {
+    max-width: 95%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .container .step-2-container .checkbox-wrap div {
+    margin: -0.4px;
+  }
+  .container .step-2-container .checkbox-wrap div label span {
+    font-size: 12px;
+    margin: 0.2rem -2px 6px 0.1rem;
+    padding: 0.36rem 1.12rem 0.56rem 1.31rem;
+  }
+}
+/*# sourceMappingURL=signup-step-2.css.map */

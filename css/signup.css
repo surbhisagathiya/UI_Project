@@ -1,0 +1,251 @@
+body {
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 44px - 44.38px);
+}
+
+.container .signup-container {
+  position: relative;
+  margin: auto;
+}
+
+.container .signup-container .title {
+  font-size: 28px;
+  color: #242a41;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.5em;
+}
+
+.container .signup-container .signup-wrapper {
+  width: 100%;
+  max-width: 26%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2.1em 3.4em 2.1em 3.4em;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-bottom: 2.5em;
+}
+
+.container .signup-container .form-group-fullname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .signup-container .form-group-fullname .name {
+  margin-right: 1em;
+}
+
+.container .signup-container .label-text {
+  font-size: 0.75em;
+  opacity: 0.3;
+  width: 100%;
+  font-family: "Nunito Sans";
+  color: #242a41;
+  font-weight: bold;
+  float: left;
+  padding-top: 0.2em;
+  padding-bottom: 0.5em;
+}
+
+.container .signup-container .input-text {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px #f7f8fa solid;
+  outline: none;
+  margin-bottom: 0.6em;
+}
+
+.container .signup-container .input-text:hover {
+  border-bottom: 2px #00ccff solid;
+}
+
+.container .signup-container input.error {
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.container .signup-container .radio-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .signup-container .purpose {
+  width: 50%;
+  float: left;
+}
+
+.container .signup-container .purpose input[type="radio"]:checked {
+  color: black;
+}
+
+.container .signup-container .purpose input[type="radio"]:checked + label {
+  font-weight: 800;
+  color: #242a41;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.container .signup-container .radio-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.container .signup-container .radio-custom,
+.container .signup-container .radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.container .signup-container .radio-custom-label {
+  position: relative;
+}
+
+.container .signup-container .radio-custom + .radio-custom-label:before {
+  content: "";
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.container .signup-container .radio-custom + .radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.container .signup-container .radio-custom:checked + .radio-custom-label:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #ffffff;
+  background-color: #20cdbb;
+  border: 1px solid #20cdbb;
+}
+
+.container .signup-container .radio-val {
+  font-size: 1em;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.container .signup-container .pwd {
+  position: relative;
+}
+
+.container .signup-container .error {
+  color: red;
+  font-family: "Nunito Sans";
+  margin-bottom: -0.8em;
+  font-size: 0.7rem;
+}
+
+.container .signup-container .eye_icon {
+  float: right;
+  position: absolute;
+  right: 0.3em;
+  opacity: 0.3;
+}
+
+.container .signup-container .Sign-Link {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container .signup-container .Btn {
+  max-width: 100%;
+  width: auto;
+  height: 20%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .signup-container .Btn.Btn_Signup {
+  background-color: #20cdbb;
+}
+
+.container .signup-container .login-box {
+  text-align: center;
+}
+
+.container .signup-container .login-box .login-text {
+  opacity: 0.3;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #242a41;
+}
+
+.container .signup-container .login-box .login-link {
+  margin: 0 0 0 2px;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: #51a8d1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 420px) {
+  .container .signup-container .title {
+    font-size: 24px;
+  }
+  .container .signup-container .label-text {
+    font-size: 0.9em;
+    padding-bottom: 1em;
+  }
+  .container .signup-container .signup-wrapper {
+    max-width: 60%;
+  }
+  .container .signup-container .radio-val {
+    font-size: 0.9em;
+  }
+  .container .signup-container .login-box {
+    padding-bottom: 1em;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

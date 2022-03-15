@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\css\signup-step-2.css" />
+    <link rel="stylesheet" href="..\css\header.css" />
+    <link rel="stylesheet" href="..\css\footer.css" />
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+    <script type="text/javascript" src="..\js\signup-step-2.js"></script>
+
+    <title>Signup Step 2</title>
+</head>
+
+<body>
+    <div class="header">
+        <!-- <div class="header__header-logo"> -->
+        <img src="../img/logo.png" srcset="../img/logo@2x.png 2x,
+            ../img/logo@3x.png 3x" class="logo">
+        <!-- </div> -->
+        <div class="title">
+            <span class="title-text Text-Style">Reading preference</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="step-2-container">
+            <h1 class="title">
+                What topics are you interested in?
+            </h1>
+            <div class="signup-2-wrapper">
+
+                <form id="step2form" method="post">
+                    <div class="checkbox-wrap">
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="business">
+                                <span>Business</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="financal-market">
+                                <span>Financal market</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="market-analysis">
+                                <span>Market analysis</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="interviews">
+                                <span>Interviews</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="media">
+                                <span>Media</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="public-opinions">
+                                <span>Public opinions</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="economy">
+                                <span>Economy</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="polity-and-market">
+                                <span>Polity and market</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="business">
+                                <span>Business</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="financal-market">
+                                <span>Financal market</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="market-analysis">
+                                <span>Market analysis</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="interviews">
+                                <span>Interviews</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="bloomberg">
+                                <span>Bloomberg</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="stocks&coins">
+                                <span>Stocks & coins</span>
+                            </label>
+                        </div>
+                        <div class="topic">
+                            <label>
+                                <input type="checkbox" name="check" class="checkbox" value="ipo">
+                                <span>IPO</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <a href="#"> -->
+                    <div class="Btn Btn_getStart">
+                        <button type="button" value="Log In" id="submit" class="get-started">Get started</button>
+                    </div>
+                    <!-- </a> -->
+                </form>
+                <span id="spnError" class="error">Please select at-least one Fruit.</span>
+
+            </div>
+            <div class="signup-step2-box">
+                <a href="login.html" class="signup-step2-text">
+                    Skip this step
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer__copyright">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Rayft. All rights reserved.
+        </span>
+        <span class="footer__social-icon">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </span>
+        </footer>
+</body>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+</html>

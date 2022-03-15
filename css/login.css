@@ -1,0 +1,197 @@
+body {
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 1em;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 44px - 44.38px);
+}
+
+.container .login-container {
+  position: relative;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.container .login-container .title {
+  font-size: 28px;
+  color: #242a41;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.7em;
+}
+
+.container .login-container .login-wrapper {
+  width: 100%;
+  max-width: 25%;
+  height: auto;
+  margin: 0 auto;
+  padding: 35px 55px 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  margin-bottom: 2.5em;
+}
+
+.container .login-container .label-text {
+  font-size: 0.9em;
+  opacity: 0.3;
+  height: 10%;
+  width: 100%;
+  font-family: "Nunito Sans";
+  color: #242a41;
+  font-weight: bold;
+  float: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.container .login-container .input-text {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  border-bottom: 2px #f7f8fa solid;
+  outline: none;
+  margin-bottom: 0.5em;
+}
+
+.container .login-container .input-text:hover {
+  border-bottom: 2px #00ccff solid;
+}
+
+.container .login-container .pwd {
+  position: relative;
+}
+
+.container .login-container .error {
+  color: red;
+  font-family: "Nunito Sans";
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+
+.container .login-container input.error {
+  color: black;
+}
+
+.container .login-container .eye_icon {
+  float: right;
+  margin-left: 23vw;
+  position: absolute;
+  right: 0.3em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
+}
+
+.container .login-container .Log-Link {
+  font-family: "Nunito Sans";
+  font-size: 1em;
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container .login-container .Btn {
+  max-width: 100%;
+  width: auto;
+  height: 20%;
+  margin: 2em auto 1em auto;
+  padding: 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .login-container .Btn.Btn_Login {
+  background-color: #20cdbb;
+}
+
+.container .login-container .forgot-password {
+  margin: 15px auto 0 auto;
+  font-family: "Nunito Sans";
+  font-size: 0.9em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #51a8d1;
+  text-decoration: none;
+}
+
+.container .login-container .signup-box {
+  text-align: center;
+}
+
+.container .login-container .signup-box .signup-text {
+  opacity: 0.3;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #242a41;
+}
+
+.container .login-container .signup-box .signup-link {
+  margin: 0 0 0 2px;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: #51a8d1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 420px) {
+  .main .login-container .title {
+    font-size: 28px;
+    color: #242a41;
+    font-weight: bold;
+    font-family: "Nunito Sans";
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .main .login-container .login-wrapper {
+    width: 100%;
+    max-width: 52%;
+    height: auto;
+    margin: 0 auto;
+    padding: 35px 55px 30px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 2.5em;
+  }
+  .main .login-container .eye_icon {
+    margin-left: 3.5em;
+  }
+}
+/*# sourceMappingURL=login.css.map */

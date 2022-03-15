@@ -1,0 +1,42 @@
+.header {
+  height: 44px;
+  background-color: #183380;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+
+.header .logo {
+  float: left;
+  width: auto;
+  height: auto;
+  max-width: 6.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.4em auto 0.5em 4em;
+  position: absolute;
+}
+
+.header .title {
+  margin: 0.6em;
+  font-family: "Nunito Sans";
+  color: #ffffff;
+  text-align: center;
+}
+
+.header .title .title-text {
+  font-size: 1.1em;
+  font-family: "Nunito Sans";
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 420px) {
+  .header .logo {
+    max-width: 5.5em;
+    margin: 0.5em auto 0.5em 1em;
+  }
+}
+/*# sourceMappingURL=header.css.map */

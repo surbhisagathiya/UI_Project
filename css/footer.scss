@@ -1,0 +1,40 @@
+.footer {
+    background-color: #1c2646;
+    padding: 0.2em;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    .footer__copyright {
+        margin: 0.5em auto 0.5em 3em;
+        opacity: 0.7;
+        font-family: "Nunito Sans";
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        float: left;
+    }
+    .footer__social-icon {
+        float: right;
+        margin: 0.5em 3em 0.5em auto;
+        opacity: 0.7;
+        font-size: 1em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.5rem;
+        .fa {
+            color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+        font-size: 0.8em;
+    }
+}

@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-header .Logo {
+.header .logo {
   height: auto;
   width: 100%;
   max-width: 14em;
@@ -15,12 +15,12 @@ header .Logo {
      object-fit: contain;
 }
 
-main {
+.container {
   padding: 0 3em 5em 3em;
   min-height: calc(100vh - 15vh - 5vh);
 }
 
-main section {
+.container .container-box {
   background-color: #183380;
   height: auto;
   width: 28%;
@@ -28,7 +28,7 @@ main section {
   padding: 2em 2em;
 }
 
-main section .section__title {
+.container .container-box .title {
   position: relative;
   width: auto;
   max-width: 31.8em;
@@ -46,7 +46,7 @@ main section .section__title {
   display: block;
 }
 
-main section .section__Log-Link {
+.container .container-box .log-Link {
   font-family: "Nunito Sans";
   font-size: 1em;
   font-weight: 800;
@@ -59,7 +59,7 @@ main section .section__Log-Link {
   text-decoration: none;
 }
 
-main section .section__Btn {
+.container .container-box .btn {
   max-width: 80%;
   width: auto;
   height: 20%;
@@ -69,16 +69,16 @@ main section .section__Btn {
   cursor: pointer;
 }
 
-main section .section__Btn.section__Btn_Login {
+.container .container-box .btn.btn_Login {
   background-color: #20cdbb;
 }
 
-main section .section__Btn.section__Btn_Signup {
+.container .container-box .btn.btn_Signup {
   background-color: #51a8d1;
   margin-top: 1em;
 }
 
-main section .section__Or-section {
+.container .container-box .or-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +87,7 @@ main section .section__Or-section {
   padding: 1.5em;
 }
 
-main section .section__OR {
+.container .container-box .or-text {
   margin: 0 1em;
   opacity: 0.15;
   font-family: "Roboto";
@@ -98,21 +98,21 @@ main section .section__OR {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
-main section .section__Line {
+.container .container-box .line {
   width: 15em;
   margin: auto 0;
   opacity: 0.15;
   border: solid 1px #ffffff;
 }
 
-main section .section__signup-title-Link {
+.container .container-box .signup-box {
   text-align: center;
 }
 
-main section .section__signup-title {
+.container .container-box .signup-title {
   height: 2em;
   opacity: 0.5;
   font-family: "Nunito Sans";
@@ -126,7 +126,7 @@ main section .section__signup-title {
   text-align: center;
 }
 
-main section .section__Sign-Link {
+.container .container-box .sign-Link {
   font-family: "Nunito Sans";
   font-size: 1em;
   font-weight: 800;
@@ -139,70 +139,30 @@ main section .section__Sign-Link {
   text-decoration: none;
 }
 
-footer {
-  background-color: #1c2646;
-  padding: 0.2em;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-}
-
-footer .footer__copyright {
-  margin: 0.5em auto 0.5em 3em;
-  opacity: 0.7;
-  font-family: "Nunito Sans";
-  font-size: 1em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #ffffff;
-  float: left;
-}
-
-footer .footer__social-icon {
-  float: right;
-  margin: 0.5em 3em 0.5em auto;
-  opacity: 0.7;
-  font-size: 1em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5rem;
-}
-
-footer .footer__social-icon .fa {
-  color: #ffffff;
-}
-
 @media screen and (max-width: 750px) {
-  main section {
+  .container .container-box {
     height: auto;
     width: 56%;
   }
 }
 
 @media screen and (max-width: 420px) {
-  header .Logo {
+  .header .logo {
     max-width: 11em;
   }
-  main {
+  .container {
     padding: 0 2em 5em 2em;
     min-height: calc(100vh - 5vh - 5vh);
   }
-  main section {
+  .container .container-box {
     padding: 1em 1em;
     height: auto;
     width: 85%;
   }
-  main section .section__title {
+  .container .container-box .title {
     font-size: 1.3em;
   }
-  footer {
+  .footer {
     font-size: 0.8em;
   }
 }

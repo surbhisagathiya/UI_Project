@@ -1,6 +1,8 @@
 $Namjoon: #183380;
 $light-navy: #112970;
 $cobalt-Two: #25439d;
+$white: #ffffff;
+$tealish: #20cdbb;
 
 body {
     background: linear-gradient(323deg, $light-navy 108%, $cobalt-Two 34%);
@@ -9,8 +11,8 @@ body {
     // box-sizing: border-box;
     // width: 100%;
 }
-header {
-    & .Logo {
+.header {
+    .logo {
         height: auto;
         width: 100%;
         max-width: 14em;
@@ -20,16 +22,16 @@ header {
         object-fit: contain;
     }
 }
-main {
+.container {
     padding: 0 3em 5em 3em;
     min-height: calc(100vh - 15vh - 5vh);
-    & section {
+    .container-box {
         background-color: $Namjoon;
         height: auto;
         width: 28%;
         margin: 0 auto;
         padding: 2em 2em;
-        & .section__title {
+        .title {
             position: relative;
             width: auto;
             max-width: 31.8em;
@@ -42,11 +44,11 @@ main {
             font-style: normal;
             line-height: 1.39;
             letter-spacing: normal;
-            color: #ffffff;
+            color: $white;
             text-align: center;
             display: block;
         }
-        & .section__Log-Link {
+        .log-Link {
             font-family: "Nunito Sans";
             font-size: 1em;
             font-weight: 800;
@@ -55,10 +57,10 @@ main {
             line-height: normal;
             letter-spacing: normal;
             text-align: center;
-            color: #ffffff;
+            color: $white;
             text-decoration: none;
         }
-        & .section__Btn {
+        .btn {
             max-width: 80%;
             width: auto;
             height: 20%;
@@ -66,21 +68,21 @@ main {
             padding: 0.5em;
             border-radius: 2em;
             cursor: pointer;
-            &.section__Btn_Login {
-                background-color: #20cdbb;
+            &.btn_Login {
+                background-color: $tealish;
             }
-            &.section__Btn_Signup {
+            &.btn_Signup {
                 background-color: #51a8d1;
                 margin-top: 1em;
             }
         }
-        & .section__Or-section {
+        .or-section {
             display: flex;
             margin: 0 1.7em;
             text-align: center;
             padding: 1.5em;
         }
-        & .section__OR {
+        .or-text {
             margin: 0 1em;
             opacity: 0.15;
             font-family: "Roboto";
@@ -91,10 +93,10 @@ main {
             line-height: normal;
             letter-spacing: normal;
             text-align: center;
-            color: white;
+            color: $white;
         }
 
-        & .section__Line {
+        .line {
             // border: 2px yellow solid;
             width: 15em;
             // height: 0rem;
@@ -102,10 +104,10 @@ main {
             opacity: 0.15;
             border: solid 1px #ffffff;
         }
-        & .section__signup-title-Link {
+        .signup-box {
             text-align: center;
         }
-        & .section__signup-title {
+        .signup-title {
             height: 2em;
             opacity: 0.5;
             font-family: "Nunito Sans";
@@ -115,10 +117,10 @@ main {
             font-style: normal;
             line-height: 1.43;
             letter-spacing: normal;
-            color: #ffffff;
+            color: $white;
             text-align: center;
         }
-        & .section__Sign-Link {
+        .sign-Link {
             font-family: "Nunito Sans";
             font-size: 1em;
             font-weight: 800;
@@ -127,50 +129,16 @@ main {
             line-height: normal;
             letter-spacing: normal;
             text-align: center;
-            color: #ffffff;
+            color: $white;
             text-decoration: none;
         }
     }
 }
 
-footer {
-    background-color: #1c2646;
-    padding: 0.2em;
-    height: auto;
-    display: flex;
-    margin: 0 auto;
-    .footer__copyright {
-        margin: 0.5em auto 0.5em 3em;
-        opacity: 0.7;
-        font-family: "Nunito Sans";
-        font-size: 1em;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: #ffffff;
-        float: left;
-    }
-    .footer__social-icon {
-        float: right;
-        margin: 0.5em 3em 0.5em auto;
-        opacity: 0.7;
-        font-size: 1em;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: 0.5rem;
-        .fa {
-            color: #ffffff;
-        }
-    }
-}
 
 @media screen and (max-width: 750px) {
-    main {
-        section {
+    .container {
+        .container-box {
             height: auto;
             width: 56%;
         }
@@ -178,25 +146,24 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-    header {
-        .Logo {
+    .header {
+        .logo {
             max-width: 11em;
         }
     }
-    main {
+    .container {
         padding: 0 2em 5em 2em;
         min-height: calc(100vh - 5vh - 5vh);
-        section {
+        .container-box {
             padding: 1em 1em;
             height: auto;
             width: 85%;
-            & .section__title {
+            .title {
                 font-size: 1.3em;
             }
         }
     }
-    footer {
+    .footer {
         font-size: 0.8em;
     }
 }
-

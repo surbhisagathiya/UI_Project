@@ -5,48 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\css\login.css" />
+    <link rel="stylesheet" href="..\css\header.css" />
+    <link rel="stylesheet" href="..\css\footer.css" />
+
     <!-- <link rel="stylesheet" href="index.css"> -->
 
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="..\js\login.js"></script>
 
     <title>Login</title>
 </head>
 
 <body>
-    <header>
-        <div class="header__header-logo">
-            <img src="img/logo.png" srcset="img/logo@2x.png 2x,
-            img/logo@3x.png 3x" class="header__header-logo_Logo">
+    <div class="header">
+        <!-- <div class="header__header-logo"> -->
+        <img src="../img/logo.png" srcset="../img/logo@2x.png 2x,
+            ../img/logo@3x.png 3x" class="logo">
+        <!-- </div> -->
+        <div class="title">
+            <span class="title-text Text-Style">Log In</span>
         </div>
-        <div class="header__header-title">
-            <span class="header__header-title_title-text Text-Style">Log In</span>
-        </div>
-    </header>
-    <main>
-        <div class="main__login-container">
-            <h1 class="main__login-container_title">
+    </div>
+    <div class="container">
+        <div class="login-container">
+            <h1 class="title">
                 Let’s get started
             </h1>
-            <div class="main__login-container_wrapper">
+            <div class="login-wrapper">
                 <!-- <form name="login-form" onsubmit="return email_funnction()"> -->
                 <form id="loginform" method="post">
 
                     <div>
-                        <label class="main__login-container_wrapper_label-text">Email or Username</label>
-                        <input class="main__login-container_wrapper_input-text" value="" name="email" type="email" />
+                        <label class="label-text">Email or Username</label>
+                        <input class="input-text" value="" name="email" type="email" />
                         <!-- <span id="erroremail" class="main__login-container_wrapper_errorMeg"></span> -->
                     </div>
-                    <div>
-                        <label class="main__login-container_wrapper_label-text">Password</label>
-                        <i toggle="#password-field"
-                            class="fa fa-eye main__login-container_wrapper_eye_icon toggle-password"></i>
+                    <div class="pwd">
+                        <label class="label-text">Password</label>
 
-                        <input class="main__login-container_wrapper_input-text" value="" id="pass_log_id"
-                            type="password" name="password" />
+                        <i toggle="#password-field" class="fa fa-eye eye_icon toggle-password"></i>
+                        <input class="input-text" value="" id="pass_log_id" type="password" name="password" />
 
                         <!-- <span toggle="#password-field"
                             class="fa fa-fw fa-eye main__login-container_wrapper_eye_icon toggle-password"></span> -->
@@ -54,27 +61,26 @@
                     </div>
 
                     <!-- <a href="#"> -->
-                    <div class="main__login-container_wrapper_Btn main__login-container_wrapper_Btn_Login">
-                        <button type="button" value="Log In" id="submit"
-                            class="main__login-container_wrapper_Log-Link">Login</button>
+                    <div class="Btn Btn_Login">
+                        <button type="button" value="Log In" id="submit" class="Log-Link ">Login</button>
                     </div>
                     <!-- </a> -->
-                    <a href="#" class="main__login-container_wrapper_Forgot-password">
-                        Forgot password?
-                    </a>
+                    <div class="forgot-password">
+                        <a>Forgot password?</a>
+                    </div>
                 </form>
             </div>
-            <div class="main__login-container_signup">
-                <span href="#" class="main__login-container_signup-text">
+            <div class="signup-box">
+                <span href="#" class="signup-text">
                     Don’t have an account yet?
                 </span>
-                <a href="#" class="main__login-container_signup-link">
+                <a href="signup.html" class="signup-link">
                     Sign Up
                 </a>
             </div>
         </div>
-    </main>
-    <footer>
+    </div>
+    <div class="footer">
         <span class="footer__copyright">
             &copy;
             <script>document.write(new Date().getFullYear());</script> Rayft. All rights reserved.
@@ -84,7 +90,7 @@
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
         </span>
-    </footer>
+        </footer>
 </body>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>

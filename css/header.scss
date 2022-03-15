@@ -1,0 +1,45 @@
+$Namjoon: #183380;
+$light-navy: #112970;
+$cobalt-Two: #25439d;
+$white: #ffffff;
+$tealish: #20cdbb;
+
+.header {
+    height: 44px;
+    background-color: $Namjoon;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    & .logo {
+        float: left;
+        width: auto;
+        height: auto;
+        max-width: 6.5em;
+        display: flex;
+        margin: 0.4em auto 0.5em 4em;
+        position: absolute;
+    }
+    .title {
+        margin: 0.6em;
+        font-family: "Nunito Sans";
+        color: $white;
+        text-align: center;
+        .title-text {
+            font-size: 1.1em;
+            font-family: "Nunito Sans";
+            color: #ffffff;
+            font-weight: 800;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        .logo {
+            // width: auto;
+            max-width: 5.5em;
+            margin: 0.5em auto 0.5em 1em;
+        }
+    }
+}
