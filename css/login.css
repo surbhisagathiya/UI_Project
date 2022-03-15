@@ -168,30 +168,11 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  .main .login-container .title {
+  .container .login-container .title {
     font-size: 28px;
-    color: #242a41;
-    font-weight: bold;
-    font-family: "Nunito Sans";
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
   }
-  .main .login-container .login-wrapper {
-    width: 100%;
-    max-width: 52%;
-    height: auto;
-    margin: 0 auto;
-    padding: 35px 55px 30px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    margin-bottom: 2.5em;
-  }
-  .main .login-container .eye_icon {
-    margin-left: 3.5em;
+  .container .login-container .login-wrapper {
+    max-width: 70%;
   }
 }
 /*# sourceMappingURL=login.css.map */
