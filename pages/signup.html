@@ -8,6 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -18,9 +19,8 @@
     <link rel="stylesheet" href="..\css\signup.css" />
     <link rel="stylesheet" href="..\css\header.css" />
     <link rel="stylesheet" href="..\css\footer.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="index.css"> -->
-    <script type="text/javascript" src="..\js\login.js"></script>
+    <!-- <script type="text/javascript" src="..\js\login.js"></script> -->
     <script type="text/javascript" src="..\js\signup.js"></script>
 
     <title>Signup</title>
@@ -43,7 +43,7 @@
             </h1>
             <div class="signup-wrapper">
                 <!-- <form name="login-form" onsubmit="return email_funnction()"> -->
-                <form id="signupform" class="loginform" method="post">
+                <form id="signupform" class="signupform" method="post">
                     <div class="form-group-fullname">
                         <div class="form-input name">
                             <label class="label-text">First name</label>
@@ -82,11 +82,13 @@
                                     <label class="radio-val">Writing reports</label>
                                 </div> -->
                                 <div class="purpose">
-                                    <input id="radio-1" class="radio-custom" name="purpose" type="radio" value="reading" >
+                                    <input id="radio-1" class="radio-custom" name="purpose" type="radio"
+                                        value="reading">
                                     <label for="radio-1" class="radio-custom-label radio-val">Reading</label>
-                                </div> 
+                                </div>
                                 <div class="purpose">
-                                    <input id="radio-2" class="radio-custom" name="purpose" type="radio" value="writingreports">
+                                    <input id="radio-2" class="radio-custom" name="purpose" type="radio"
+                                        value="writingreports">
                                     <label for="radio-2" class="radio-custom-label radio-val">Writing reports</label>
                                 </div>
                             </div>
@@ -95,14 +97,15 @@
 
                     <!-- <a href="#"> -->
                     <div class="Btn Btn_Signup">
-                        <button type="button" value="Log In" id="submit" class="Sign-Link">Next</button>
+                        <!-- <button type="button" value="Log In" id="submit" class="Sign-Link">Next</button> -->
+                        <button type="button" value="signup" id="submit" class="Sign-Link ">Next</button>
                     </div>
                     <!-- </a> -->
 
                 </form>
             </div>
             <div class="login-box">
-                <span href="#" class="login-text">
+                <span class="login-text">
                     Already have an account?
                 </span>
                 <a href="login.html" class="login-link">

@@ -45,10 +45,12 @@ $(document).ready(function () {
         }
     });
 
+
     $('#submit').click(function () {
-        $('#signupform').submit()  
-        if($('#signupform').valid()){
+        $('#signupform').submit()
+        if ($('#signupform').valid()) {
             window.location = "signup-step-2.html";
         }
     });
+
 });
