@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..\css\signup-step-2.css" />
+    <link rel="stylesheet" href="..\css\home.css" />
     <link rel="stylesheet" href="..\css\header.css" />
     <link rel="stylesheet" href="..\css\footer.css" />
     <!-- <link rel="stylesheet" href="index.css"> -->
 
     <script type="text/javascript" src="..\js\signup-step-2.js"></script>
 
-    <title>Signup Step 2</title>
+    <title>Home page</title>
 </head>
 
 <body>
@@ -30,11 +34,563 @@
         <img src="../img/logo.png" srcset="../img/logo@2x.png 2x,
             ../img/logo@3x.png 3x" class="logo">
         <!-- </div> -->
+        <div class="header-box">
+            <div class="search">
+                <i class="fa fa-search search_icon"></i>
+                <input class="search-text" value="" type="text" name="search"
+                    placeholder="Search article, authoer, stocks, topics…" />
+            </div>
+            <div class="icon-nav">
+                <div class="bookmark-icon">
+                    <i class="fas fa-compass icon explore-icon"></i>
+                    <label class="icon-label">Explore</label>
+                </div>
+                <div class="bookmark-icon">
+                    <i class="fa fa-bookmark icon"></i>
+                    <label class="icon-label">Bookmarks</label>
+                </div>
+                <div class="bookmark-icon">
+                    <i class="fa fa-pencil-square-o icon"></i>
+                    <label class="icon-label">Start writing</label>
+                </div>
+                <div class="bookmark-icon">
+                    <div class="side-icon">
+                        <span class="iconify icon1" data-icon="ic:baseline-account-balance-wallet" data-width="18"
+                            data-height="18"></span>
+                    </div>
+                    <div class="side-icon">
+                        <i class="fa fa-bell icon1"></i>
+                    </div>
+                    <div class="side-icon">
+                        <i class="fa fa-user-circle icon1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
     <div class="container">
-        <div class="step-2-container">
+        <div class="home-container">
+            <div class="title">
+                <div class="title-left">
+                    <h3><b>Hi, Fannie</b> here is a personalized feed for you…</h3>
+                </div>
+                <div class="title-right">
+                    <span>suggested by your personal interest</span>
+                </div>
+            </div>
+            <p class="title-line2">You are intrested to read…</p>
+            <div class="card">
+                <div class="col">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">These tips could help you get more financial aid for college</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and great sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Helen Garner
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">Can a shampoo bottle save infant lives? Bangladesh is proving it</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="col-2 left">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">If you got pitched for investment 200 times per week, you might miss a good one
+                            too. Or you might discover Facebook</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Cameron Oliver
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 right">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Sallie Brown
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-4">
+            <div class="card-4-title">
+                <div class="rec-box">
+                    <p class="rec-title">Rayft recommended articles</p>
+                    <span class="view-more">View more <i class="fa fa-angle-right"></i></span>
+                </div>
+                <div class="card">
+                    <div class="col-1">
+                        <div class="img-wrap">
+                            <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x"
+                                class="img1">
+                            <i class="fa fa-bookmark img-icon bookmark"></i>
+                            <i class="fa fa-ellipsis-v img-icon more"></i>
+                            <button class="price">$ 0.45</button>
+                        </div>
+                        <div class="col-detail">
+                            <p class="desc">10 tough practice questions and sample responses</p>
+                            <div class="sub-desc">
+                                <p class="name">
+                                    Floyd West
+                                </p>
+                                <p class="day-date">
+                                    <span>23 Mar - </span>
+                                    <span>4 min read</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="img-wrap">
+                            <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x"
+                                class="img1">
+                            <i class="fa fa-bookmark img-icon bookmark"></i>
+                            <i class="fa fa-ellipsis-v img-icon more"></i>
+                            <button class="price">$ 0.45</button>
+                        </div>
+                        <div class="col-detail">
+                            <p class="desc">Can a shampoo bottle save infant lives? Bangladesh is proving it</p>
+                            <div class="sub-desc">
+                                <p class="name">
+                                    Floyd West
+                                </p>
+                                <p class="day-date">
+                                    <span>23 Mar - </span>
+                                    <span>4 min read</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="img-wrap">
+                            <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x"
+                                class="img1">
+                            <i class="fa fa-bookmark img-icon bookmark"></i>
+                            <i class="fa fa-ellipsis-v img-icon more"></i>
+                            <button class="price">$ 0.45</button>
+                        </div>
+                        <div class="col-detail">
+                            <p class="desc">10 tough practice questions and sample responses</p>
+                            <div class="sub-desc">
+                                <p class="name">
+                                    Floyd West
+                                </p>
+                                <p class="day-date">
+                                    <span>23 Mar - </span>
+                                    <span>4 min read</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-5">
+            <div class="card-5-title">
+                <p>Because you are following <b>Business</b></p>
+                <i class="fa fa-ellipsis-v title-info-i"></i>
+            </div>
+            <div class="card">
+                <div class="col-2 left">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" style="height: 11.87em;" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">If you got pitched for investment 200 times per week, you might miss a good one
+                            too. Or you might discover Facebook</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Cameron Oliver
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 right">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Sallie Brown
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">Can a shampoo bottle save infant lives? Bangladesh is proving it</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-6">
+            <div class="card-6-title">
+                <div class="auth-box">
+                    <p class="auth-title">New authors you might like</p>
+                    <span class="view-more">View more <i class="fa fa-angle-right"></i></span>
+                </div>
+            </div>
+            <div class="auth-card">
+                <div class="card-box">
+                    <img src="/img/auth1 (1).png" srcset="img/auth1 (2).png 2x,img/auth1 (3).png 3x" class="auth-img">
+                    <p class="auth-name">Mildred Grant</p>
+                    <span class="auth-details">
+                        <span class="followers">
+                            5.3k followers
+                        </span>
+                        <span class="following">
+                            43 followings
+                        </span>
+                    </span>
+                    <button class="btn-follow">Follow</button>
+                </div>
+                <div class="card-box"> <img src="/img/auth1 (1).png" srcset="img/auth1 (2).png 2x,img/auth1 (3).png 3x"
+                        class="auth-img">
+                    <p class="auth-name">Susan Carson</p>
+                    <span class="auth-details">
+                        <span class="followers">
+                            5.3k followers
+                        </span>
+                        <span class="following">
+                            43 followings
+                        </span>
+                    </span>
+                    <button class="btn-follow">Follow</button>
+                </div>
+                <div class="card-box">
+                    <img src="/img/auth1 (1).png" srcset="img/auth1 (2).png 2x,img/auth1 (3).png 3x" class="auth-img">
+                    <p class="auth-name">Harvey Yates</p>
+                    <span class="auth-details">
+                        <span class="followers">
+                            5.3k followers
+                        </span>
+                        <span class="following">
+                            43 followings
+                        </span>
+                    </span>
+                    <button class="btn-follow">Follow</button>
+                </div>
+                <div class="card-box">
+                    <img src="/img/auth1 (1).png" srcset="img/auth1 (2).png 2x,img/auth1 (3).png 3x" class="auth-img">
+                    <p class="auth-name">Scott Jackson</p>
+                    <span class="auth-details">
+                        <span class="followers">
+                            5.3k followers
+                        </span>
+                        <span class="following">
+                            43 followings
+                        </span>
+                    </span>
+                    <button class="btn-follow">Follow</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-5">
+            <div class="card-5-title">
+                <p>You are likely to get update on <b>Marketing</b></p>
+                <i class="fa fa-ellipsis-v title-info-i"></i>
+            </div>
+            <div class="card">
+                <div class="col-2 left">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" style="height: 11.87em;" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">If you got pitched for investment 200 times per week, you might miss a good one
+                            too. Or you might discover Facebook</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Cameron Oliver
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 right">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Sallie Brown
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img2 (1).png" srcset="/img/img2 (2).png 2x,/img/img2 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">Can a shampoo bottle save infant lives? Bangladesh is proving it</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="img-wrap">
+                        <img src="/img/img1 (1).png" srcset="/img/img1 (2).png 2x,/img/img1 (3).png 3x" class="img1">
+                        <i class="fa fa-bookmark img-icon bookmark"></i>
+                        <i class="fa fa-ellipsis-v img-icon more"></i>
+                        <button class="price">$ 0.45</button>
+                    </div>
+                    <div class="col-detail">
+                        <p class="desc">10 tough practice questions and sample responses</p>
+                        <div class="sub-desc">
+                            <p class="name">
+                                Floyd West
+                            </p>
+                            <p class="day-date">
+                                <span>23 Mar - </span>
+                                <span>4 min read</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -47,9 +603,10 @@
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
         </span>
-        </footer>
+    </div>
 </body>
 
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
 </html>

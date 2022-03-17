@@ -4,8 +4,22 @@ $cobalt-Two: #25439d;
 $white: #ffffff;
 $tealish: #20cdbb;
 
+body {
+    // background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+    font-family: NunitoSans;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    // font-size: 1em;
+}
+
 .header {
-    height: 44px;
+    // max-height: 2.75em;
+    height: auto;
     background-color: $Namjoon;
     overflow: hidden;
     display: block;
@@ -32,14 +46,107 @@ $tealish: #20cdbb;
             margin-bottom: 2em;
         }
     }
+    .header-box {
+        display: flex;
+        // border: 2px solid orange;
+    }
+    .search {
+        margin-left: 14em;
+        margin-right: 5em;
+        // border: 2px solid red;
+        width: 25%;
+    }
+    .search-text {
+        width: 100%;
+        height: 1.87em;
+        padding: 0.5em 1.5em;
+        margin-bottom: 0.5em;
+        margin-left: 2.5em;
+        margin-top: 0.8em;
+        border-radius: 0.12em;
+        font-family: "Nunito Sans", "sans-serif";
+        font-size: 0.87em;
+        border: none;
+        background-color: white;
+        &:focus {
+            outline: none;
+        }
+    }
+    ::placeholder {
+        opacity: 0.4;
+        font-family: NunitoSans;
+        font-size: 0.75em;
+    }
+    .search_icon {
+        // border: 2px solid yellow;
+        // width:50%;
+        // float: right;
+        // margin-top: 2em;
+        // margin-left: 30em;
+        position: absolute;
+        right: 57em;
+        object-fit: contain;
+        opacity: 0.3;
+        margin-top: 0.9em;
+    }
+    .icon-nav {
+        position: absolute;
+        margin: auto 0;
+        color: #ffffff;
+        font-size: 0.93em;
+        display: flex;
+        // float: right;
+        margin-left: 68em;
+        margin-top: 0.8em;
+        // border: 2px solid olive;
+        // &.icon-nav1{
+        //     margin-right:1em;
+        // }
+        .icon1 {
+            margin-left: 1em;
+        }
+        .bookmark-icon {
+            margin-left: 1.37em;
+            object-fit: contain;
+            position: relative;
+            display: flex;
+        }
+        .side-icon {
+            margin-right: 1.5em;
+        }
+        .icon-label {
+            opacity: 0.55;
+        }
+        .icon {
+            margin-right: 0.6em;
+            &.explore-icon {
+                font-size: 1.12em;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 420px) {
     .header {
+        // height: 2.75em;
         .logo {
             // width: auto;
             max-width: 5.5em;
             margin: 0.5em auto 0.5em 1em;
+        }
+        .search_icon{
+            right: 14em;
+            margin-top: 0.7em;
+        }
+        .search{
+            margin-left: 5.5em;
+            width: 30%;
+        }
+        .search-text{
+            font-size: 0.80em;
+        }
+        .icon-nav{
+         margin-left: 55%;
         }
     }
 }

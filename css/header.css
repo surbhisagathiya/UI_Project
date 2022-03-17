@@ -1,5 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: NunitoSans;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
 .header {
-  height: 44px;
+  height: auto;
   background-color: #183380;
   overflow: hidden;
   display: block;
@@ -33,10 +44,129 @@
   margin-bottom: 2em;
 }
 
+.header .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .search {
+  margin-left: 14em;
+  margin-right: 5em;
+  width: 25%;
+}
+
+.header .search-text {
+  width: 100%;
+  height: 1.87em;
+  padding: 0.5em 1.5em;
+  margin-bottom: 0.5em;
+  margin-left: 2.5em;
+  margin-top: 0.8em;
+  border-radius: 0.12em;
+  font-family: "Nunito Sans", "sans-serif";
+  font-size: 0.87em;
+  border: none;
+  background-color: white;
+}
+
+.header .search-text:focus {
+  outline: none;
+}
+
+.header ::-webkit-input-placeholder {
+  opacity: 0.4;
+  font-family: NunitoSans;
+  font-size: 0.75em;
+}
+
+.header :-ms-input-placeholder {
+  opacity: 0.4;
+  font-family: NunitoSans;
+  font-size: 0.75em;
+}
+
+.header ::-ms-input-placeholder {
+  opacity: 0.4;
+  font-family: NunitoSans;
+  font-size: 0.75em;
+}
+
+.header ::placeholder {
+  opacity: 0.4;
+  font-family: NunitoSans;
+  font-size: 0.75em;
+}
+
+.header .search_icon {
+  position: absolute;
+  right: 57em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
+  margin-top: 0.9em;
+}
+
+.header .icon-nav {
+  position: absolute;
+  margin: auto 0;
+  color: #ffffff;
+  font-size: 0.93em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 68em;
+  margin-top: 0.8em;
+}
+
+.header .icon-nav .icon1 {
+  margin-left: 1em;
+}
+
+.header .icon-nav .bookmark-icon {
+  margin-left: 1.37em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .icon-nav .side-icon {
+  margin-right: 1.5em;
+}
+
+.header .icon-nav .icon-label {
+  opacity: 0.55;
+}
+
+.header .icon-nav .icon {
+  margin-right: 0.6em;
+}
+
+.header .icon-nav .icon.explore-icon {
+  font-size: 1.12em;
+}
+
 @media screen and (max-width: 420px) {
   .header .logo {
     max-width: 5.5em;
     margin: 0.5em auto 0.5em 1em;
+  }
+  .header .search_icon {
+    right: 14em;
+    margin-top: 0.7em;
+  }
+  .header .search {
+    margin-left: 5.5em;
+    width: 30%;
+  }
+  .header .search-text {
+    font-size: 0.80em;
+  }
+  .header .icon-nav {
+    margin-left: 55%;
   }
 }
 /*# sourceMappingURL=header.css.map */
