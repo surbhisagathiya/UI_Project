@@ -27,7 +27,7 @@ body {
     float: left;
     .logo-wrap {
         width: 15%;
-        margin: auto 0 ;
+        margin: auto 0;
         // border: 1px solid red;
     }
     .logo {
@@ -44,7 +44,7 @@ body {
         font-family: "Nunito Sans";
         color: $white;
         text-align: center;
-        
+
         // border: 1px solid red;
         .title-text {
             font-size: 1.1em;
@@ -149,6 +149,7 @@ body {
         flex-direction: column;
         // height: 2.75em;
         width: 100%;
+        // display: block;
         // margin: auto;
         .logo-wrap {
             width: 100%;
@@ -156,9 +157,9 @@ body {
             // margin: 0 auto;
             // border: 2px solid red;
             padding-right: 1.5em;
-            margin-top:0.5em;
+            margin-top: 0.5em;
         }
-        .logo{
+        .logo {
             margin: 0 auto;
         }
         .search_icon {
@@ -168,23 +169,24 @@ body {
         .search {
             width: 95%;
         }
-        // .side-icon {
-        //     margin-top: 0.1em;
-        // }
+        .side-icon {
+            margin-left: -0.5em;
+        }
         // .search-text {
         //     font-size: 0.8em;
         // }
         .icon-nav {
             width: 100%;
             font-size: 0.8em;
-
+            margin-left: -2.4em;
             margin-top: 0.5em;
             // padding: 0.5em;
+            // margin: 0 auto;
             // flex-direction: row;
             // border: 2px solid yellow;
         }
         .icon-label {
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
     }
 }

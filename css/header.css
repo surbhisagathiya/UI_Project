@@ -178,13 +178,17 @@ body {
   .header .search {
     width: 95%;
   }
+  .header .side-icon {
+    margin-left: -0.5em;
+  }
   .header .icon-nav {
     width: 100%;
     font-size: 0.8em;
+    margin-left: -2.4em;
     margin-top: 0.5em;
   }
   .header .icon-label {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=header.css.map */
