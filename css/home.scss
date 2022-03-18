@@ -22,8 +22,12 @@ body {
         width: 100%;
         font-family: "Nunito Sans", sans-serif;
     }
-    .home-container h3 {
+    .home-container p {
         opacity: 0.9;
+        font-size: 1.5em;
+        padding-top: 2em;
+        font-weight: normal;
+        font-family: "Nunito Sans", sans-serif;
         & b {
             font-weight: 800;
         }
@@ -34,6 +38,8 @@ body {
     .title-right {
         width: 50%;
         margin: auto 0;
+        padding-top: 2em;
+        opacity: 0.9;
         & span {
             float: right;
             font-style: italic;
@@ -42,7 +48,7 @@ body {
         }
     }
     .title-line2 {
-        margin: 2.06em auto 1.37em 0;
+        margin: 0 auto 1.37em 0;
         font-size: 1.12em;
         font-family: "Nunito Sans", sans-serif;
         font-weight: bold;

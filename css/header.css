@@ -10,23 +10,29 @@ body {
 }
 
 .header {
-  height: auto;
+  height: 2.75em;
   background-color: #183380;
   overflow: hidden;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  float: left;
+}
+
+.header .logo-wrap {
+  width: 15%;
+  margin: auto 0;
 }
 
 .header .logo {
-  float: left;
   width: auto;
   height: auto;
   max-width: 6.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.4em auto 0.5em 4em;
-  position: absolute;
+  margin: 0.3em auto 0.5em 4em;
 }
 
 .header .title {
@@ -44,28 +50,22 @@ body {
   margin-bottom: 2em;
 }
 
-.header .header-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header .search {
-  margin-left: 14em;
-  margin-right: 5em;
   width: 25%;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .header .search-text {
   width: 100%;
-  height: 1.87em;
-  padding: 0.5em 1.5em;
-  margin-bottom: 0.5em;
-  margin-left: 2.5em;
-  margin-top: 0.8em;
+  display: block;
+  margin: auto;
+  height: 1.78em;
+  padding: 1em;
+  margin-top: 0.3em;
   border-radius: 0.12em;
   font-family: "Nunito Sans", "sans-serif";
-  font-size: 0.87em;
+  font-size: 1.1em;
   border: none;
   background-color: white;
 }
@@ -100,7 +100,7 @@ body {
 
 .header .search_icon {
   position: absolute;
-  right: 57em;
+  right: 59em;
   -o-object-fit: contain;
      object-fit: contain;
   opacity: 0.3;
@@ -108,15 +108,15 @@ body {
 }
 
 .header .icon-nav {
-  position: absolute;
-  margin: auto 0;
   color: #ffffff;
-  font-size: 0.93em;
+  font-size: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 68em;
-  margin-top: 0.8em;
+  width: 60%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header .icon-nav .icon1 {
@@ -124,49 +124,67 @@ body {
 }
 
 .header .icon-nav .bookmark-icon {
-  margin-left: 1.37em;
+  margin: auto 0;
+  margin-left: 1.5em;
   -o-object-fit: contain;
      object-fit: contain;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .header .icon-nav .side-icon {
-  margin-right: 1.5em;
+  margin-right: 1em;
+  font-size: 1.3em;
 }
 
 .header .icon-nav .icon-label {
   opacity: 0.55;
+  padding-top: 0.1em;
 }
 
 .header .icon-nav .icon {
   margin-right: 0.6em;
+  font-size: 1.4em;
 }
 
 .header .icon-nav .icon.explore-icon {
-  font-size: 1.12em;
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 420px) {
+  .header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .header .logo-wrap {
+    width: 100%;
+    padding-right: 1.5em;
+    margin-top: 0.5em;
+  }
   .header .logo {
-    max-width: 5.5em;
-    margin: 0.5em auto 0.5em 1em;
+    margin: 0 auto;
   }
   .header .search_icon {
-    right: 14em;
-    margin-top: 0.7em;
+    right: 2em;
+    margin-top: 0.8em;
   }
   .header .search {
-    margin-left: 5.5em;
-    width: 30%;
-  }
-  .header .search-text {
-    font-size: 0.80em;
+    width: 95%;
   }
   .header .icon-nav {
-    margin-left: 55%;
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+  .header .icon-label {
+    font-size: 0.9em;
   }
 }
 /*# sourceMappingURL=header.css.map */
