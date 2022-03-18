@@ -371,5 +371,14 @@ body {
   .container .auth-img {
     width: 10em;
   }
+  .container .rec-box .view-more {
+    width: 73%;
+  }
+  .container .auth-box .view-more {
+    width: 68%;
+  }
+  .container .card-5-title .title-info-i {
+    width: 65%;
+  }
 }
 /*# sourceMappingURL=home.css.map */
